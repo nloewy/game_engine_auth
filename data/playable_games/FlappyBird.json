@@ -190,8 +190,8 @@
       },
       "shape": "Rectangle",
       "dimension": {
-        "x_dimension": 10,
-        "y_dimension": 10
+        "x_dimension": 25,
+        "y_dimension": 25
       },
       "color": {
         "Default": [
