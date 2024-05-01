@@ -114,9 +114,12 @@
 
 * Class #2: 
 
-* Class #3: 
+* Class #3: GameLoader (the parser)
+    * The GameLoader class
 
-* Class #4:
+* Class #4: Command
+  * The command class is the major part of the command pattern used in the game engine which handles the events triggered by two game objects colliding and in turn handles the flow of the game. Commands implement the command interface and are specified during authoring (using the interaction and policy panels mentioned above) and instantiated during parsing (in the parser class) both through reflection and annotation on the command classes and packages.
+
 
 ## Assumptions or Simplifications
 
