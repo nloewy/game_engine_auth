@@ -120,6 +120,20 @@
 * Class #4: Command, Condition
   * The command class is the major part of the command pattern used in the game engine which handles the events triggered by two game objects colliding and in turn handles the flow of the game. Commands implement the command interface and are specified during authoring (using the interaction and policy panels mentioned above) and instantiated during parsing (in the parser class) both through reflection and annotation on the command classes and packages.
 
+* Class #5: Game Controller
+  * The GameController class within our game application, it was designed to efficiently manage interactions between the game’s model and view components.
+  * It initializes and coordinates various management systems, such as SceneManager, AnimationManager, and DatabaseController, which facilitate game setup, control, and scene transitions. 
+  * The class also offers comprehensive game control functions, allowing for pausing, resuming, and starting gameplay, alongside dynamic scene management. 
+  * To enhance user interaction, it incorporates methods for handling game mechanics like striking objects and moving controllable elements. 
+  * Exception handling is robust, ensuring smooth operation and user experience, while data persistence features allow saving and serializing game states into JSON format, ensuring continuity and integrity of the gameplay experience.
+
+
+
+
+
+
+
+
 
 ## Assumptions or Simplifications
 
