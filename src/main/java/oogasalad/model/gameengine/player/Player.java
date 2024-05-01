@@ -22,7 +22,6 @@ import org.apache.logging.log4j.Logger;
 
 public class Player {
 
-  private static final Logger LOGGER = LogManager.getLogger(Player.class);
   private final int playerId;
   private final Stack<PlayerRecord> playerHistory;
   private List<Strikeable> myStrikeables;
@@ -170,14 +169,9 @@ public class Player {
    */
 
   public PlayerRecord getPlayerRecord() {
-    try {
-      double tempScore = score;
-      tempScore += myScoreables.stream().mapToDouble(Scoreable::getTemporaryScore).sum();
-      return new PlayerRecord(playerId, tempScore, activeStrikeable.asGameObject().getId());
-    } catch (NullPointerException e) {
-      LOGGER.warn("Player " + playerId + " not found");
-      return null;
-    }
+    double tempScore = score;
+    tempScore += myScoreables.stream().mapToDouble(Scoreable::getTemporaryScore).sum();
+    return new PlayerRecord(playerId, tempScore, activeStrikeable.asGameObject().getId());
   }
 
   public PlayerRecord getLastPlayerRecord() {
