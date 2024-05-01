@@ -46,7 +46,7 @@ public class ColorPanelTest extends DukeApplicationTest {
         stage.setScene(scene);
         stage.show();
       } catch (Exception e) {
-        e.printStackTrace();
+        
       }
     });
     waitForFxEvents(); // Wait for the UI to stabilize
