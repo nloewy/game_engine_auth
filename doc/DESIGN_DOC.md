@@ -115,9 +115,9 @@
 * Class #2: 
 
 * Class #3: GameLoader (the parser)
-    * The GameLoader class
+    * The GameLoader (implemented by loader view and loader model) reads the JSON game data files into game objects and rules for the game engine and the frontend for gameplay; it uses reflection with annotation on the commands and conditions, etc. to instantiate and validate the commands and their respective parameters (they vary between different commands)
 
-* Class #4: Command
+* Class #4: Command, Condition
   * The command class is the major part of the command pattern used in the game engine which handles the events triggered by two game objects colliding and in turn handles the flow of the game. Commands implement the command interface and are specified during authoring (using the interaction and policy panels mentioned above) and instantiated during parsing (in the parser class) both through reflection and annotation on the command classes and packages.
 
 
