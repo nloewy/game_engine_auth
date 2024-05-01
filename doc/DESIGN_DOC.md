@@ -10,7 +10,8 @@
     * Parser (JSON to Game)
     * Builder (Authoring to JSON)
     * Load and save mid-game
-    * Authoring environment (post-refactor): policy selection, interaction selection, keys selection panels
+    * Authoring environment (post-refactor): policy selection, interaction selection, keys selection
+      panels
     * MOD (authoring part)
     * Authoring Environment game object panel (post-refactor): major bug fixes
 
@@ -30,7 +31,8 @@
     * Game Parser (JSON to Game)
     * Game Builder (Authoring to JSON)
     * Authoring Environment (version supporting most updated Game Engine)
-    * Authoring Environment (refactor - ex: AuthoringScreen, AuthoringFactory, UIElementFactory, Panel, Container, ShapeProxy, AuthoringProxy)
+    * Authoring Environment (refactor - ex: AuthoringScreen, AuthoringFactory, UIElementFactory,
+      Panel, Container, ShapeProxy, AuthoringProxy)
     * Bug fixes (authoring environment, Game Parser, Game Builder)
     * Tests for Game Parser, Game Builder
 
@@ -87,15 +89,31 @@
 #### Core Classes and Abstractions, their Responsibilities and Collaborators
 
 * Class #1: AuthoringFactory (DefaultAuthoringFactory) - Judy He
-  * The DefaultAuthoringFactory implements the AuthoringFactory interface to enable configuration of Game Objects in the authoring environment of the game. The 4 methods implemented are createGameObjectsConfiguration(), createSurfacesConfiguration(), createCollidablesConfiguration(), and createPlayersConfiguration(). Each of these 4 methods are required for configuring a new Game Object. Hence, the AuthoringFactory is an abstraction that offers flexibility and extensibility if one wants to create different implementations for building the Game Object configuration part of the authoring enviornment. DefaultAuthoringFactory is then a concrete class offer one possible implementation.      
+    * The DefaultAuthoringFactory implements the AuthoringFactory interface to enable configuration
+      of Game Objects in the authoring environment of the game. The 4 methods implemented are
+      createGameObjectsConfiguration(), createSurfacesConfiguration(),
+      createCollidablesConfiguration(), and createPlayersConfiguration(). Each of these 4 methods
+      are required for configuring a new Game Object. Hence, the AuthoringFactory is an abstraction
+      that offers flexibility and extensibility if one wants to create different implementations for
+      building the Game Object configuration part of the authoring enviornment.
+      DefaultAuthoringFactory is then a concrete class offer one possible implementation.
 
 * Class #2: Panel - Judy He, Alisha Zhang
-  * The Panel class is an interface, an abstraction that allows flexibility and extensibility of the authoring environment. Implementations of the Panel interface include ShapePanel, PolicyPanel, ImagePanel, ColorPanel, InteractionPanel, KeySelectionPanel, and ModPanel. By creating combinations of Panels using the Container class, one can easily set up a new part of the authoring environment. 
+    * The Panel class is an interface, an abstraction that allows flexibility and extensibility of
+      the authoring environment. Implementations of the Panel interface include ShapePanel,
+      PolicyPanel, ImagePanel, ColorPanel, InteractionPanel, KeySelectionPanel, and ModPanel. By
+      creating combinations of Panels using the Container class, one can easily set up a new part of
+      the authoring environment.
 
 * Class #3: ShapeProxy, AuthoringProxy - Judy He
-  * The ShapeProxy and AuthoringProxy in the authoring environment allow for sharing of common pointers across Panel classes that are responsible for keeping track of the current selected Game Object(s), the current configured attributes of a selected Game Object, all Game Object interactions, policies, key selections and mods during the authoring process. The final state of these data will be passed to the Game Builder through the AuthoringController to create a new JSON file for the newly authored game. 
+    * The ShapeProxy and AuthoringProxy in the authoring environment allow for sharing of common
+      pointers across Panel classes that are responsible for keeping track of the current selected
+      Game Object(s), the current configured attributes of a selected Game Object, all Game Object
+      interactions, policies, key selections and mods during the authoring process. The final state
+      of these data will be passed to the Game Builder through the AuthoringController to create a
+      new JSON file for the newly authored game.
 
-* Class #4: 
+* Class #4:
 
 ## Assumptions or Simplifications
 
@@ -121,12 +139,19 @@
 
 #### Features Designed to be Easy to Add
 
-* Feature #1: 
-* Feature #2: 
+* Feature #1: Language Translations  
+  Adding a new language involves creating a new properties file with the translations and creating
+  an enum to represent the language.
 
-* Feature #3: 
+* Feature #2: New Scenes or scene elements
+  Scene elements are created by parsing xml files for parameters. If new styling is required, this
+  can be done by adding a tag to a css file. If new event handling is required, an enum should be
+  created. Adding the event simply requires writing the handler and mapping the enum to the handler
+  in the appropriate handling class.
 
-* Feature #4: 
+* Feature #3:
+
+* Feature #4:
 
 #### Features Not Yet Done
 
