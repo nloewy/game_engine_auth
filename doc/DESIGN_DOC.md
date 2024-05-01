@@ -174,7 +174,9 @@
   * We Had inserted collision handling to be a method in the ExternalGameEngine API in order to handle it in the frontend and pass it to the backend.
   * We then moved collision handling to be handling in the internal game engine.
 
-* Change #4
+* Change #4: Classification of game objects
+  * We initially designed it to be one collidableObject interface implemented by Ball, PointScoringObject, and UserControllableObject
+  * We changed it to be two types: surfaces and collidables, and for each collidable there is the option to make it strikeable, scoreable, or controllable
 
 ## How to Add New Features
 
