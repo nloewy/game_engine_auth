@@ -142,39 +142,43 @@
 
 #### Features Designed to be Easy to Add
 
-* Feature #1: Language Translations  
-  Adding a new language involves creating a new properties file with the translations and creating
-  an enum to represent the language.
+* Feature #1: Language Translations
+  * Adding a new language involves creating a new properties file with the translations and creating
+    an enum to represent the language.
 
-* Feature #2: New Scenes or scene elements
-  Scene elements are created by parsing xml files for parameters. If new styling is required, this
-  can be done by adding a tag to a css file. If new event handling is required, an enum should be
-  created. Adding the event simply requires writing the handler and mapping the enum to the handler
-  in the appropriate handling class.
+* Feature #2: New Scenes or Scene Elements:
+  * Scene elements are created by parsing xml files for parameters. If new styling is required, this
+    can be done by adding a tag to a css file. If new event handling is required, an enum should be
+    created. Adding the event simply requires writing the handler and mapping the enum to the handler
+    in the appropriate handling class.
 
-* Feature #3:
+* Feature #3: Themes
+  * Themes are created using a css file for the specific theme in combination with an enum.
+  * Therefore, if a developer/user were to want to add a new theme, all they would need to do is to create a new css file for the theme, and to add the theme onto the UITheme enum.
 
-* Feature #4:
+* Feature #4: A New Database Field
+  * If a user/developer wanted to add a new field onto the database, such as favorites (favorite games), it would be a very simple change into the database.
+  * The only requirement would be to add a new table onto the existing database called for example favorite games which would be connected to the users, and the existing games.
 
 #### Features Not Yet Done
 
-* Feature #1: Allowing user to specify surface incline in authoring environment  
-  The current authoring environment does not allow users to select the incline of their chosen
-  surfaces. There is backend support for surfaces of various angles, which is evident by the
-  successful implementation of games like breakout and flappy bird that appear to have downwards
-  gravity in relation to the screen.
+* Feature #1: Allowing user to specify surface incline in authoring environment
+  * The current authoring environment does not allow users to select the incline of their chosen
+    surfaces. There is backend support for surfaces of various angles, which is evident by the
+    successful implementation of games like breakout and flappy bird that appear to have downwards
+    gravity in relation to the screen.
 
-* Feature #2: Leaderboards with varying stats  
-  Currently, the leaderboards displayed show the top scores for the game that was last completed.
-  This could be extended to show top scores within friend circles or most frequently played games.
+* Feature #2: Leaderboards with varying stats
+  * Currently, the leaderboards displayed show the top scores for the game that was last completed.
+    This could be extended to show top scores within friend circles or most frequently played games.
 
-* Feature #3: Consistent UI theme  
-  Our game play environment has a consistent UI theme with functionality for the user to select
-  different themes(currently default, dark, and fun). However, this has not been extended to our
-  authoring environment which currently does not have any css styling.
+* Feature #3: Consistent UI theme
+  * Our game play environment has a consistent UI theme with functionality for the user to select
+    different themes(currently default, dark, and fun). However, this has not been extended to our
+    authoring environment which currently does not have any css styling.
 
-* Feature #4: Live multiplayer games
-  We would like to be able to have users play games on separate computers in real time. This would
-  allow us to implement games like airhockey that require both players to have access to mouse
-  controls at the same time.
+* Feature #4: Live multiplayer games 
+  * We would like to be able to have users play games on separate computers in real time. This would
+    allow us to implement games like airhockey that require both players to have access to mouse
+    controls at the same time.
  
