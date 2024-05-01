@@ -45,19 +45,28 @@
 ## Design Goals
 
 * Goal #1: Modularity and Extensibility
-  * The architecture was designed to be very modular, allowing for the easy addition of new components and features without breaking existing functionality. 
-  * This modularity makes sure that each module can be developed, tested, and maintained independently, increasing flexibility and extensibility.
-  * Interfaces and abstract classes were implemented to define clear boundaries between modules which allowed for easy substitution/extension of components. For example, the *ExternalGameEngine* interface provided a contract for interaction between the game controller and the game engine, 
-  enabling alternative implementations to be integrated seamlessly.
+    * The architecture was designed to be very modular, allowing for the easy addition of new
+      components and features without breaking existing functionality.
+    * This modularity makes sure that each module can be developed, tested, and maintained
+      independently, increasing flexibility and extensibility.
+    * Interfaces and abstract classes were implemented to define clear boundaries between modules
+      which allowed for easy substitution/extension of components. For example, the
+      *ExternalGameEngine* interface provided a contract for interaction between the game controller
+      and the game engine,
+      enabling alternative implementations to be integrated seamlessly.
 
-* Goal #2: Configurability 
-  * The system was designed to be highly configurable, enabling users to customize various aspects into their own games that they can create in the authoring environment without changing the codebase or writing a line of code. 
-  * By abstracting configuration parameters, the system promotes adaptability to diverse game requirements.
+* Goal #2: Configurability
+    * The system was designed to be highly configurable, enabling users to customize various aspects
+      into their own games that they can create in the authoring environment without changing the
+      codebase or writing a line of code.
+    * By abstracting configuration parameters, the system promotes adaptability to diverse game
+      requirements.
 
 * Goal #3: Abstraction of Core Functionality
-  * The design emphasizes abstracting core game functionalities into reusable components or interfaces. 
-  * This abstraction layer separates the high-level game logic from the implementation details.
-  * 
+    * The design emphasizes abstracting core game functionalities into reusable components or
+      interfaces.
+    * This abstraction layer separates the high-level game logic from the implementation details.
+    *
 
 #### How were Specific Features Made Easy to Add
 
@@ -126,7 +135,10 @@
   Currently, the leaderboards displayed show the top scores for the game that was last completed.
   This could be extended to show top scores within friend circles or most frequently played games.
 
-* Feature #3: Consistent UI Theme
+* Feature #3: Consistent UI theme  
+  Our game play environment has a consistent UI theme with functionality for the user to select
+  different themes(currently default, dark, and fun). However, this has not been extended to our
+  authoring environment which currently does not have any css styling.
 
 * Feature #4
  
