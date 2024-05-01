@@ -9,7 +9,7 @@
 * Team Member #1: Alisha Zhang
     * Parser (JSON to Game)
     * Builder (Authoring to JSON)
-    * Load and save half-game
+    * Load and save mid-game
     * Authoring environment (post-refactor): policy selection, interaction selection, keys selection panels
     * MOD (authoring part)
     * Authoring Environment game object panel (post-refactor): major bug fixes
@@ -30,7 +30,7 @@
     * Game Parser (JSON to Game)
     * Game Builder (Authoring to JSON)
     * Authoring Environment (version supporting most updated Game Engine)
-    * Authoring Environment (refactor - AuthoringFactory, UIElementFactory, Panel, Container, ShapeProxy, AuthoringProxy)
+    * Authoring Environment (refactor - ex: AuthoringScreen, AuthoringFactory, UIElementFactory, Panel, Container, ShapeProxy, AuthoringProxy)
     * Bug fixes (authoring environment, Game Parser, Game Builder)
     * Tests for Game Parser, Game Builder
 
@@ -95,7 +95,7 @@
 * Class #3: ShapeProxy, AuthoringProxy - Judy He
   * The ShapeProxy and AuthoringProxy in the authoring environment allow for sharing of common pointers across Panel classes that are responsible for keeping track of the current selected Game Object(s), the current configured attributes of a selected Game Object, all Game Object interactions, policies, key selections and mods during the authoring process. The final state of these data will be passed to the Game Builder through the AuthoringController to create a new JSON file for the newly authored game. 
 
-* Class #4
+* Class #4: 
 
 ## Assumptions or Simplifications
 
@@ -121,13 +121,14 @@
 
 #### Features Designed to be Easy to Add
 
-* Feature #1
+* Feature #1: Adding commands that supports new types of games (that is in case it's needed, it's easy to add, but our current commands/conditions should be able to cover various types of 2d physics based games)
+  * The command pattern and chain of responsibility pattern makes it easy add a new command into use; the use of annotation and reflection in both the parser and authoring for prompting user to enter the correct amount of parameters during authoring and for validating the command parameters during parsing makes it so that none of the authoring and parsing code need to be changed when adding new commands.
 
-* Feature #2
+* Feature #2: 
 
-* Feature #3
+* Feature #3: 
 
-* Feature #4
+* Feature #4: 
 
 #### Features Not Yet Done
 
