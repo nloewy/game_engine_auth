@@ -22,6 +22,7 @@ import org.apache.logging.log4j.Logger;
 
 public class Player {
 
+  private static final Logger LOGGER = LogManager.getLogger(Player.class);
   private final int playerId;
   private final Stack<PlayerRecord> playerHistory;
   private List<Strikeable> myStrikeables;
@@ -169,9 +170,13 @@ public class Player {
    */
 
   public PlayerRecord getPlayerRecord() {
-    double tempScore = score;
-    tempScore += myScoreables.stream().mapToDouble(Scoreable::getTemporaryScore).sum();
-    return new PlayerRecord(playerId, tempScore, activeStrikeable.asGameObject().getId());
+    try {
+      double tempScore = score;
+      tempScore += myScoreables.stream().mapToDouble(Scoreable::getTemporaryScore).sum();
+      return new PlayerRecord(playerId, tempScore, activeStrikeable.asGameObject().getId());
+    } catch (NullPointerException e) {
+      return null;
+    }
   }
 
   public PlayerRecord getLastPlayerRecord() {
