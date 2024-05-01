@@ -16,7 +16,7 @@
     * Authoring Environment game object panel (post-refactor): major bug fixes
 
 * Team Member #2: Doga Ozmen
-    * Frontend Game Environment
+    * Frontend Game Environment 
     * Authoring Environment (pre-refactor)
     * View Database Implementation
     * View Tests
