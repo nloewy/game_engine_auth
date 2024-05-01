@@ -30,7 +30,7 @@
     * Game Parser (JSON to Game)
     * Game Builder (Authoring to JSON)
     * Authoring Environment (version supporting most updated Game Engine)
-    * Authoring Environment (refactor - AuthoringFactory, UIElementFactory, Panel, Container, ShapeProxy, AuthoringProxy)
+    * Authoring Environment (refactor - ex: AuthoringScreen, AuthoringFactory, UIElementFactory, Panel, Container, ShapeProxy, AuthoringProxy)
     * Bug fixes (authoring environment, Game Parser, Game Builder)
     * Tests for Game Parser, Game Builder
 
