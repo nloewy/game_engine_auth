@@ -350,8 +350,8 @@
       ],
       "mass": 0.04,
       "position": {
-        "x_position": 440,
-        "y_position": 440
+        "x_position": 150,
+        "y_position": 950
       },
       "shape": "Circle",
       "dimension": {
