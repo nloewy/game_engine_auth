@@ -112,6 +112,7 @@ public class LoadGameEventHandler {
         }
       });
     } catch (Exception e) {
+      e.printStackTrace();
       LOGGER.error(e.getMessage());
       //WARNING.showAlert(AlertType.ERROR, "Start Game Error", null, e.getMessage());
     }

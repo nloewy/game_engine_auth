@@ -175,7 +175,6 @@ public class Player {
       tempScore += myScoreables.stream().mapToDouble(Scoreable::getTemporaryScore).sum();
       return new PlayerRecord(playerId, tempScore, activeStrikeable.asGameObject().getId());
     } catch (NullPointerException e) {
-      LOGGER.warn("Player " + playerId + " not found");
       return null;
     }
   }
