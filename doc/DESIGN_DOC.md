@@ -71,26 +71,27 @@
       requirements.
 
 * Goal #3: Abstraction of Core Functionality
-  * The design emphasizes abstracting core game functionalities (such as the game engine) into reusable components or interfaces. 
-  * This abstraction layer separates the high-level game logic from the implementation details.
-
+    * The design emphasizes abstracting core game functionalities (such as the game engine) into
+      reusable components or interfaces.
+    * This abstraction layer separates the high-level game logic from the implementation details.
 
 #### How were Specific Features Made Easy to Add
 
 * Feature #1: New Commands
-  * Make a class that implements Command
-  * Give annotation with expected parameter number
-  * You've just made a new command!
+    * Make a class that implements Command
+    * Give annotation with expected parameter number
+    * You've just made a new command!
 
 * Feature #2: New UI Elements
 
 * Feature #3: New Turn Policies
-  * Make a class that implements Turn Policies
-  * You've just made a new turn policy!
+    * Make a class that implements Turn Policies
+    * You've just made a new turn policy!
 
 ## High-level Design
 
 #### Core Classes and Abstractions, their Responsibilities and Collaborators
+
 * Class #1: AuthoringFactory (DefaultAuthoringFactory) - Judy He
     * The DefaultAuthoringFactory implements the AuthoringFactory interface to enable configuration
       of Game Objects in the authoring environment of the game. The 4 methods implemented are
@@ -120,13 +121,25 @@
 
 ## Assumptions or Simplifications
 
-* Decision #1
+* Decision #1: We have assumed that the user has a general understanding of how
+  to build a game. We decided to give the game author a lot of creative freedom to encourage
+  extensibility and versatility. However, the tradeoff here is that the user can create games that
+  may be illogical or frustrating to play. For example, a user can create a game where no points can
+  ever be scored. While this is certainly a legal decision to make, it does not create a very
+  entertaining game.
 
-* Decision #2
+* Decision #2: We decided that all game objects would be either circles/ellipses or
+  squares/rectangles. This simplified our authoring environment as we only had to offer these two
+  shape templates to the users. It also avoided physics bugs that may have arose from objects with
+  unique boundaries colliding.
 
-* Decision #3
+* Decision #3: We decided not to account for rotational dynamics to simplify the game engine. For
+  example, in pool the cue ball can have different spins that affect its movement and collisions
+  with
+  other objects. In our game, we do not account for spin and assume that the ball is not rotating.
 
-* Decision #4
+* Decision #4: We decided to assign all surfaces an infinite mass. This created the correct visual
+  representation of a ball moving over a surface with friction.
 
 ## Changes from the Original Plan
 
