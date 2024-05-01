@@ -27,10 +27,12 @@
     * Game Environment Refactor
 
 * Team Member #4: Judy He
-    * Game (JSON) Parser, Game (JSON) Builder
-    * Authoring Environment (version supporting most updated Game Engine and refactor)
-    * Bug fixes (authoring environment, parsing)
-    * Tests for Game (JSON) Parser, Game (JSON) Builder
+    * Game Parser (JSON to Game)
+    * Game Builder (Authoring to JSON)
+    * Authoring Environment (version supporting most updated Game Engine)
+    * Authoring Environment (refactor - AuthoringFactory, UIElementFactory, Panel, Container, ShapeProxy, AuthoringProxy)
+    * Bug fixes (authoring environment, Game Parser, Game Builder)
+    * Tests for Game Parser, Game Builder
 
 * Team Member #5: Kevin Deng
     * Transformable node
