@@ -90,7 +90,8 @@ public class GameControllerTest extends DukeApplicationTest {
    */
 //  @Test
 //  public void testStartGamePlay() {
-//   // runAsJFXAction(() -> gameController.startGamePlay("data/playable_games/shuffleboard.json"));
+//   // runAsJFXAction(() -> gameController.startGamePlay("data/playable_games/Sit chuffleboard
+//   .json"));
 //
 //  }
 }
