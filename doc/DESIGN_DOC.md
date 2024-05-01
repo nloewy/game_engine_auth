@@ -7,8 +7,12 @@
 ## Team Roles and Responsibilities
 
 * Team Member #1: Alisha Zhang
-    * Parsing
-    * Authoring Environment (post-refactor) bug fixes
+    * Parser (JSON to Game)
+    * Builder (Authoring to JSON)
+    * Load and save half-game
+    * Authoring environment (post-refactor) policy selection, interaction selection, keys selections
+    * MOD (authoring part)
+    * Authoring Environment game object panel (post-refactor) major bug fixes
 
 * Team Member #2: Doga Ozmen
     * Frontend Game Environment
