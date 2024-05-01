@@ -130,11 +130,17 @@
 
 ## Changes from the Original Plan
 
-* Change #1
+* Change #1: No Live Gameplay
+  * We decided to not implement live gameplay because it ended up being on a lower priority list.
+  * We implemented database with permissions instead.
 
-* Change #2
+* Change #2: Decided to do MODS
+  * We changed our plan to have mods instead of a social center.
 
-* Change #3
+* Change #3: Collision Handling from Front to Backend
+  * Originally we had planned for collision handling to be implemented in the frontend. 
+  * We Had inserted collision handling to be a method in the ExternalGameEngine API in order to handle it in the frontend and pass it to the backend.
+  * We then moved collision handling to be handling in the internal game engine.
 
 * Change #4
 
