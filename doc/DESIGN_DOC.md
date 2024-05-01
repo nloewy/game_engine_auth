@@ -121,9 +121,7 @@
 
 #### Features Designed to be Easy to Add
 
-* Feature #1: Adding commands that supports new types of games (that is in case it's needed, it's easy to add, but our current commands/conditions should be able to cover various types of 2d physics based games)
-  * The command pattern and chain of responsibility pattern makes it easy add a new command into use; the use of annotation and reflection in both the parser and authoring for prompting user to enter the correct amount of parameters during authoring and for validating the command parameters during parsing makes it so that none of the authoring and parsing code need to be changed when adding new commands.
-
+* Feature #1: 
 * Feature #2: 
 
 * Feature #3: 
