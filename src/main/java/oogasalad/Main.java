@@ -10,6 +10,10 @@ public class Main extends Application {
 
   @Override
   public void start(Stage primaryStage) throws SQLException {
+    Database d = new Database();
+    d.registerUser("presidentPrice", "duke", "");
+    d.registerUser("theNotoriousRcd", "design", "");
+    d.registerGame("NotWorkingGame", "theNotoriousRcd", 1, "public");
     new GameWindow(primaryStage);
   }
 }
