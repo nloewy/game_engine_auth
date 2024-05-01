@@ -71,23 +71,26 @@
       requirements.
 
 * Goal #3: Abstraction of Core Functionality
-    * The design emphasizes abstracting core game functionalities into reusable components or
-      interfaces.
-    * This abstraction layer separates the high-level game logic from the implementation details.
-    *
+  * The design emphasizes abstracting core game functionalities (such as the game engine) into reusable components or interfaces. 
+  * This abstraction layer separates the high-level game logic from the implementation details.
+
 
 #### How were Specific Features Made Easy to Add
 
-* Feature #1
+* Feature #1: New Commands
+  * Make a class that implements Command
+  * Give annotation with expected parameter number
+  * You've just made a new command!
 
-* Feature #2
+* Feature #2: New UI Elements
 
-* Feature #3
+* Feature #3: New Turn Policies
+  * Make a class that implements Turn Policies
+  * You've just made a new turn policy!
 
 ## High-level Design
 
 #### Core Classes and Abstractions, their Responsibilities and Collaborators
-
 * Class #1: AuthoringFactory (DefaultAuthoringFactory) - Judy He
     * The DefaultAuthoringFactory implements the AuthoringFactory interface to enable configuration
       of Game Objects in the authoring environment of the game. The 4 methods implemented are
