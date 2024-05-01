@@ -173,5 +173,8 @@
   different themes(currently default, dark, and fun). However, this has not been extended to our
   authoring environment which currently does not have any css styling.
 
-* Feature #4
+* Feature #4: Live multiplayer games
+  We would like to be able to have users play games on separate computers in real time. This would
+  allow us to implement games like airhockey that require both players to have access to mouse
+  controls at the same time.
  
