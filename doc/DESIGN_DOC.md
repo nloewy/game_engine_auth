@@ -118,7 +118,10 @@
     * The GameLoader (implemented by loader view and loader model) reads the JSON game data files into game objects and rules for the game engine and the frontend for gameplay; it uses reflection with annotation on the commands and conditions, etc. to instantiate and validate the commands and their respective parameters (they vary between different commands)
 
 * Class #4: Command, Condition
-  * The command class is the major part of the command pattern used in the game engine which handles the events triggered by two game objects colliding and in turn handles the flow of the game. Commands implement the command interface and are specified during authoring (using the interaction and policy panels mentioned above) and instantiated during parsing (in the parser class) both through reflection and annotation on the command classes and packages.
+  * The GameEngine holds the current state of the game. This includes the turn, round, game objects, and players. In the package, there are numerous abstractions the Game Engine uses. The command functional interface employs the Command Pattern, and is called when events triggered by two game objects colliding and in turn handles the flow of the game. The Command Interface is a functional interface with about 15 implementations, one for each command. Its sole method is execute, which takes in a gameEngine (to perhaps be modified), and a list of arguments (as commands are parameterized, in its constructor) with an annotation on how many to expect. The execution of a command represents completing a task that occurs as a response to a collision. These collision responses are defined in the authoring environment, and they use the preset commands. These commands are flexible, and nearly all of the commands are used in multiple games. Similarly, the Condition interface is a functional interface with one method, evaluate. This evaluates the state of the gameEngine to see if a condition is met, and is also very extendable. The gameEngine also interacts with other abstractions such as the TurnPolicy, StaticStateHandler, and PlayerRecordComparator, as well as the adaptors Strikeable, Scoreable, and Controllable.
+
+
+
 
 * Class #5: Game Controller
   * The GameController class within our game application, it was designed to efficiently manage interactions between the game’s model and view components.
