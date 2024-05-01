@@ -150,13 +150,13 @@ public class GameController {
       gameLoaderView = new GameLoaderView(selectedGame);
       gameEngine = new GameEngine(selectedGame);
     } catch (InvalidFileException e) {
-      e.printStackTrace();
+      
       LOGGER.error(e.getMessage());
-      handleException("Start Game Error", "Can't find game file");
+      handleException("Start Game Error", "Invalid game file");
       return;
     } catch (InvalidColorParsingException | InvalidShapeException |
              MissingJsonGameInfoException e) {
-      e.printStackTrace();
+      
       LOGGER.error(e.getMessage());
       handleException("Parsing Error", e.getMessage());
       return;
@@ -306,7 +306,7 @@ public class GameController {
           + "/GameDescriptions.properties");
       properties.load(inputStream);
     } catch (IOException e) {
-      e.printStackTrace();
+      
       LOGGER.error(e.getMessage());
       WARNING.showAlert(getScene(), AlertType.ERROR, "Game Description Error", null,
           e.getMessage());
@@ -329,7 +329,7 @@ public class GameController {
     } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException |
              IllegalAccessException | InvocationTargetException | InvalidImageException e) {
       LOGGER.error(e.getMessage());
-      e.printStackTrace();
+      
       return null;
     }
   }
