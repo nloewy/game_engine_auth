@@ -4,7 +4,7 @@
 ## Noah Loewy, Alisha Zhang, Doga Ozmen, Jordan Haytaian, Kevin Deng, Konur Nordberg
 
 This project implements an authoring environment and player for multiple related games. Before reading the code, please take a minute to peruse through [my reflection](https://github.com/nloewy/oogasalad_team01/blob/main/NOAH_DESIGN_REFLECTION.md). 
-This project, originally for Duke's [CS308 - Software Design and Implementation](https://courses.cs.duke.edu/spring24/compsci308/) took more than 2 months to complete. I spent approximately 40+ hours/week working on the project.   
+This project, originally for Duke's [CS308 - Advanced Software Design and Implementation](https://courses.cs.duke.edu/spring24/compsci308/) took more than 2 months to complete. I spent approximately 40+ hours/week working on the project.   
 
 ### Important Documents
 
