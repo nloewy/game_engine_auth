@@ -3,13 +3,15 @@
 
 ## Noah Loewy, Alisha Zhang, Doga Ozmen, Jordan Haytaian, Kevin Deng, Konur Nordberg
 
-This project implements an authoring environment and player for multiple related games.
+This project implements an authoring environment and player for multiple related games. Before reading the code, please take a minute to peruse through [my reflection](https://github.com/nloewy/oogasalad_team01/blob/main/NOAH_DESIGN_REFLECTION.md) 
 
 ### Important Documents
 
-1. [Link to Team's Design Document]
-2. [Link to Noah's Personal Design Reflection]
-3. [Link to Noah's Contributions to Codebase]
+1. [Link to Team's Design Document](https://github.com/nloewy/oogasalad_team01/blob/main/doc/DESIGN_DOC.md)
+2. [Link to Noah's Personal Design Reflection](https://github.com/nloewy/oogasalad_team01/blob/main/NOAH_DESIGN_REFLECTION.md) 
+3. Link to Noah's Primary Contributions to Codebase
+   a. [Game Engine](https://github.com/nloewy/oogasalad_team01/tree/main/src/main/java/oogasalad/model/gameengine)
+   b. [Game Engine Tests](https://github.com/nloewy/oogasalad_team01/tree/main/src/test/java/oogasalad/model/gameengine)
 
 ### Roles
 * Team Member #1: Noah Loewy (me)
