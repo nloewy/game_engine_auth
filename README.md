@@ -1,10 +1,62 @@
-# oogasalad
+# Game Design Project
 
-## TEAM 01 Fysics Fun
 
-## Alisha Zhang, Doga Ozmen, Jordan Haytaian, Kevin Deng, Konur Nordberg, Noah Loewy
+## Noah Loewy, Alisha Zhang, Doga Ozmen, Jordan Haytaian, Kevin Deng, Konur Nordberg
 
 This project implements an authoring environment and player for multiple related games.
+
+### Important Documents
+
+1. [Link to Team's Design Document]
+2. [Link to Noah's Personal Design Reflection]
+3. [Link to Noah's Contributions to Codebase]
+
+### Roles
+* Team Member #1: Noah Loewy (me)
+    * Game Engine
+    * Game Engine Tests
+    * Database
+    * Various front end, parser bug fixes and refactoring
+    * Angry Birds, Flappy Birds, Golf, Shuffleboard, Pool
+
+* Team Member #2: Doga Ozmen
+    * Frontend Game Environment 
+    * Authoring Environment (pre-refactor)
+    * View Database Implementation
+    * View Tests
+
+* Team Member #3: Jordan Haytaian
+    * Frontend Game Environment
+    * Authoring Environment (pre-refactor)
+    * Bug Fixes
+    * Game Environment Refactor
+
+* Team Member #4: Judy He
+    * Game Parser (JSON to Game)
+    * Game Builder (Authoring to JSON)
+    * Authoring Environment (version supporting most updated Game Engine)
+    * Authoring Environment (refactor - ex: AuthoringScreen, AuthoringFactory, UIElementFactory,
+      Panel, Container, ShapeProxy, AuthoringProxy)
+    * Bug fixes (authoring environment, Game Parser, Game Builder)
+    * Tests for Game Parser, Game Builder
+
+* Team Member #5: Kevin Deng
+    * Transformable node
+
+* Team Member #6: Konur Nordberg
+    * Tests
+    * Physics Engine
+    * Database (SQL)
+ 
+* Team Member #7: Alisha Zhang
+    * Parser (JSON to Game)
+    * Builder (Authoring to JSON)
+    * Load and save mid-game
+    * Authoring environment (post-refactor): policy selection, interaction selection, keys selection
+      panels
+    * MOD (authoring part)
+    * Authoring Environment game object panel (post-refactor): major bug fixes
+
 
 ### Running the Program
 
