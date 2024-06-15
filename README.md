@@ -3,7 +3,8 @@
 
 ## Noah Loewy, Alisha Zhang, Doga Ozmen, Jordan Haytaian, Kevin Deng, Konur Nordberg
 
-This project implements an authoring environment and player for multiple related games. Before reading the code, please take a minute to peruse through [my reflection](https://github.com/nloewy/oogasalad_team01/blob/main/NOAH_DESIGN_REFLECTION.md) 
+This project implements an authoring environment and player for multiple related games. Before reading the code, please take a minute to peruse through [my reflection](https://github.com/nloewy/oogasalad_team01/blob/main/NOAH_DESIGN_REFLECTION.md). 
+This project, originally for Duke's [CS308 - Software Design and Implementation](https://courses.cs.duke.edu/spring24/compsci308/) took more than 2 months to complete. I spent approximately 40+ hours/week working on the project.   
 
 ### Important Documents
 
@@ -13,27 +14,27 @@ This project implements an authoring environment and player for multiple related
    a. [Game Engine](https://github.com/nloewy/oogasalad_team01/tree/main/src/main/java/oogasalad/model/gameengine)
    b. [Game Engine Tests](https://github.com/nloewy/oogasalad_team01/tree/main/src/test/java/oogasalad/model/gameengine)
 
-### Roles
-* Team Member #1: Noah Loewy (me)
+### Contributors
+* Noah Loewy (me)
     * Game Engine
     * Game Engine Tests
     * Database
     * Various front end, parser bug fixes and refactoring
     * Angry Birds, Flappy Birds, Golf, Shuffleboard, Pool
 
-* Team Member #2: Doga Ozmen
+* Doga Ozmen
     * Frontend Game Environment 
     * Authoring Environment (pre-refactor)
     * View Database Implementation
     * View Tests
 
-* Team Member #3: Jordan Haytaian
+* Jordan Haytaian
     * Frontend Game Environment
     * Authoring Environment (pre-refactor)
     * Bug Fixes
     * Game Environment Refactor
 
-* Team Member #4: Judy He
+* Judy He
     * Game Parser (JSON to Game)
     * Game Builder (Authoring to JSON)
     * Authoring Environment (version supporting most updated Game Engine)
@@ -42,15 +43,15 @@ This project implements an authoring environment and player for multiple related
     * Bug fixes (authoring environment, Game Parser, Game Builder)
     * Tests for Game Parser, Game Builder
 
-* Team Member #5: Kevin Deng
+* Kevin Deng
     * Transformable node
 
-* Team Member #6: Konur Nordberg
+* Konur Nordberg
     * Tests
     * Physics Engine
     * Database (SQL)
  
-* Team Member #7: Alisha Zhang
+* Alisha Zhang
     * Parser (JSON to Game)
     * Builder (Authoring to JSON)
     * Load and save mid-game
