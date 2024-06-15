@@ -6,25 +6,6 @@
 
 This project implements an authoring environment and player for multiple related games.
 
-### Timeline
-
-* Start Date: 3/21/24
-
-* Finish Date: 5/1/2024
-
-* Hours Spent: Average 40/week (per team member)
-
-### Attributions
-
-* Resources used for learning (including AI assistance)
-    * ChatGPT
-    * Professor assistance
-    * Stack Over Flow
-
-
-* Resources used directly (including AI assistance)
-    * ChatGPT
-
 ### Running the Program
 
 * Main class: src/main/java/oogasalad/Main.java
@@ -65,10 +46,4 @@ This project implements an authoring environment and player for multiple related
 * Noteworthy Features: User profiles, friend circles, game permissions, game scores are stored in
   database, games have different mod options
 
-### Assignment Impressions
-
-This assignment was challenging at times- as a team we felt that it required a lot of work and was a
-bit overwhelming in the requirements. However, we learned a lot through working on this project and
-are really proud of our end results. It was a great opportunity to culminate all that we've learned
-about design and team work throughout the semester.
 
